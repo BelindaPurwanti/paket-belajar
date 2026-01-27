@@ -96,6 +96,22 @@ proxies:
       headers:
         Host: "sg1vpn.jagoanip.my.id"
     udp: true
+  - name: CANADA
+    server: 104.18.2.2
+    port: 443
+    type: vmess
+    uuid: 8034ab03-40c6-41b0-9866-7cb4004f9f81
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: "cavpn.jagoanip.my.id"
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: "cavpn.jagoanip.my.id"
+    udp: true
 proxy-groups:
   - name: AKUN
     type: select
@@ -104,6 +120,7 @@ proxy-groups:
       - INDO 2
       - INDO 3
       - SINGAPORE
+      - CANADA
 
   - name: IKLAN
     type: select
