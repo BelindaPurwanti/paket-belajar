@@ -92,7 +92,7 @@ rules:
  - RULE-SET,Tiktok,AKUN
  - RULE-SET,Meta,AKUN
  - RULE-SET,PortGame,GAME
- - MATCH,INDO
+ - MATCH,GLOBAL
 
 rule-providers:
   Game:
