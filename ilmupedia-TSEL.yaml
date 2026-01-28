@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: INDO 1
+  - name: INDO
     server: 104.18.2.2
     port: 443
     type: vmess
@@ -68,7 +68,7 @@ proxy-groups:
   - name: AKUN
     type: select
     proxies:
-      - INDO 1
+      - INDO
       - SINGAPORE
       
   - name: IKLAN
@@ -92,7 +92,7 @@ rules:
  - RULE-SET,Tiktok,AKUN
  - RULE-SET,Meta,AKUN
  - RULE-SET,PortGame,GAME
- - MATCH,INDO 1
+ - MATCH,INDO
 
 rule-providers:
   Game:
