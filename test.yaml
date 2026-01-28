@@ -64,3 +64,21 @@ proxies:
       headers:
         Host: "sg.lanexain.my.id"
     udp: true
+proxy-groups:
+  - name: AKUN
+    type: select
+    proxies:
+      - INDO
+      - SINGAPORE
+      
+  - name: IKLAN
+    type: select
+    proxies:
+      - REJECT
+
+  - name: GAME
+    type: select
+    proxies:
+      - AKUN
+      - DIRECT
+
