@@ -48,28 +48,11 @@ proxies:
       headers:
         Host: "samudra.basecampsedekahbumi.my.id"
     udp: true
-  - name: SINGAPORE
-    server: 104.18.2.2
-    port: 443
-    type: vmess
-    uuid: 10f74f5f-6b8d-4586-8aa6-29c3c509dd34
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: "sg.lanexain.my.id"
-    network: ws
-    ws-opts:
-      path: /vmess-tls
-      headers:
-        Host: "sg.lanexain.my.id"
-    udp: true
 proxy-groups:
   - name: AKUN
     type: select
     proxies:
       - INDO
-      - SINGAPORE
       
   - name: IKLAN
     type: select
