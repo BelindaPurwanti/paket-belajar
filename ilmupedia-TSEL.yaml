@@ -75,7 +75,7 @@ rules:
  - RULE-SET,Tiktok,AKUN
  - RULE-SET,Meta,AKUN
  - RULE-SET,PortGame,GAME
- - MATCH,GLOBAL
+ - MATCH,AKUN
 
 rule-providers:
   Game:
