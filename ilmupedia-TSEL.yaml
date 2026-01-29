@@ -48,7 +48,7 @@ proxies:
       headers:
         Host: "samudra.basecampsedekahbumi.my.id"
     udp: true
-  - name: SINGAPORE
+  - name: SINGAPORE 1
     type: vmess
     server: 104.18.2.2
     port: 443
@@ -63,12 +63,28 @@ proxies:
         Host: sg1vpn.jagoanip.my.id
     tls: true
     servername: sg1vpn.jagoanip.my.id
+  - name: SINGAPORE 2
+    type: trojan
+    server: 104.18.2.2
+    port: 443
+    password: 370971d8-1afa-4d80-906d-b1e5c8752308
+    sni: sg1vpn.jagoanip.my.id
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sg1vpn.jagoanip.my.id
+    tls: true
+    servername: sg1vpn.jagoanip.my.id
 proxy-groups:
   - name: AKUN
     type: select
     proxies:
       - INDO
-      - SINGAPORE
+      - SINGAPORE 1
+      - SINGAPORE 2
       
   - name: IKLAN
     type: select
