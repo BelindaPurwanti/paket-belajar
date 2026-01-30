@@ -48,22 +48,6 @@ proxies:
       headers:
         Host: "samudra.basecampsedekahbumi.my.id"
     udp: true
-  - name: INDO 2
-    server: 104.18.2.2
-    port: 443
-    type: vmess
-    uuid: 1e15e766-722e-441b-a42f-d2ee66526fae
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: "id1vpn.jagoanip.my.id"
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: "id1vpn.jagoanip.my.id"
-    udp: true
   - name: SINGAPORE 1
     type: vmess
     server: 104.18.2.2
@@ -99,7 +83,6 @@ proxy-groups:
     type: select
     proxies:
       - INDO 1
-      - INDO 2
       - SINGAPORE 1
       - SINGAPORE 2
       
