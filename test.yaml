@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: INDO
+  - name: INDO 1
     server: 104.17.3.81
     port: 443
     type: vmess
@@ -64,12 +64,29 @@ proxies:
       headers:
         Host: sg1vpn.jagoanip.my.id
     udp: true
+  - name: INDO 2
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 1e15e766-722e-441b-a42f-d2ee66526fae
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1vpn.jagoanip.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1vpn.jagoanip.my.id
+    udp: true
 proxy-groups:
   - name: AKUN
     type: select
     proxies:
-      - INDO
+      - INDO 1
       - SINGAPORE
+      - INDO 2
       
   - name: IKLAN
     type: select
