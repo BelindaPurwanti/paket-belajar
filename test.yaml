@@ -57,12 +57,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: "sg.lanexain.my.id"
+    servername: "sg1vpn.jagoanip.my.id"
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: "sg.lanexain.my.id"
+        Host: "sg1vpn.jagoanip.my.id"
     udp: true
 proxy-groups:
   - name: AKUN
