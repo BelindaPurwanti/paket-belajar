@@ -60,7 +60,7 @@ proxies:
     servername: "sg.lanexain.my.id"
     network: ws
     ws-opts:
-      path: /vmess-tls
+      path: /vmess
       headers:
         Host: "sg.lanexain.my.id"
     udp: true
