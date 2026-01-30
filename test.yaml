@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
   - name: INDO
-    server: 104.17.3.81
+    server: layanan.ruangguru.com
     port: 443
     type: vmess
     uuid: c69b02eb-5695-4cb2-8dca-976ee35c6d58
@@ -49,7 +49,7 @@ proxies:
         Host: "samudra.basecampsedekahbumi.my.id"
     udp: true
   - name: SINGAPORE
-    server: 104.17.3.81
+    server: layanan.ruangguru.com
     port: 443
     type: vmess
     uuid: 10f74f5f-6b8d-4586-8aa6-29c3c509dd34
